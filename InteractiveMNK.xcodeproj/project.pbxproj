@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1008CC23182A84BB001B53DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1008CC22182A84BB001B53DC /* Foundation.framework */; };
+		1008CC25182A84BB001B53DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1008CC24182A84BB001B53DC /* CoreGraphics.framework */; };
+		1008CC27182A84BB001B53DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1008CC26182A84BB001B53DC /* UIKit.framework */; };
+		1008CC2D182A84BB001B53DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1008CC2B182A84BB001B53DC /* InfoPlist.strings */; };
+		1008CC2F182A84BB001B53DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1008CC2E182A84BB001B53DC /* main.m */; };
+		1008CC33182A84BB001B53DC /* MNKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1008CC32182A84BB001B53DC /* MNKAppDelegate.m */; };
+		1008CC42182A84BB001B53DC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1008CC41182A84BB001B53DC /* XCTest.framework */; };
+		1008CC43182A84BB001B53DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1008CC22182A84BB001B53DC /* Foundation.framework */; };
+		1008CC44182A84BB001B53DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1008CC26182A84BB001B53DC /* UIKit.framework */; };
+		1008CC4C182A84BB001B53DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1008CC4A182A84BB001B53DC /* InfoPlist.strings */; };
+		1008CC4E182A84BB001B53DC /* InteractiveMNKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1008CC4D182A84BB001B53DC /* InteractiveMNKTests.m */; };
+		1008CC59182A8763001B53DC /* MNKHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1008CC58182A8763001B53DC /* MNKHomeVC.m */; };
+		1008CC5C182A876E001B53DC /* MNKGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1008CC5B182A876E001B53DC /* MNKGameVC.m */; };
+		1008D146182C8AB1001B53DC /* MNKGameBoardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1008D144182C8AB1001B53DC /* MNKGameBoardCell.m */; };
+		1008D147182C8AB1001B53DC /* MNKGameBoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1008D145182C8AB1001B53DC /* MNKGameBoardCell.xib */; };
+		1008D14B182C8AD1001B53DC /* MNKABSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1008D14A182C8AD1001B53DC /* MNKABSearch.m */; };
+		1008D14E182C8AF4001B53DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1008D14D182C8AF4001B53DC /* Main.storyboard */; };
+		1008D151182C8B0E001B53DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1008D150182C8B0E001B53DC /* Images.xcassets */; };
+		1008D154182C8B58001B53DC /* MNKNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1008D153182C8B58001B53DC /* MNKNode.m */; };
+		1008D158182D30B4001B53DC /* MNKState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1008D157182D30B4001B53DC /* MNKState.m */; };
+		10DA6BA1182EC0E000A744A2 /* MNKABSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DA6BA0182EC0E000A744A2 /* MNKABSearchResult.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1008CC45182A84BB001B53DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1008CC17182A84BB001B53DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1008CC1E182A84BB001B53DC;
+			remoteInfo = InteractiveMNK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1008CC1F182A84BB001B53DC /* InteractiveMNK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveMNK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1008CC22182A84BB001B53DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1008CC24182A84BB001B53DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1008CC26182A84BB001B53DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1008CC2A182A84BB001B53DC /* InteractiveMNK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InteractiveMNK-Info.plist"; sourceTree = "<group>"; };
+		1008CC2C182A84BB001B53DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1008CC2E182A84BB001B53DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1008CC30182A84BB001B53DC /* InteractiveMNK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InteractiveMNK-Prefix.pch"; sourceTree = "<group>"; };
+		1008CC31182A84BB001B53DC /* MNKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNKAppDelegate.h; sourceTree = "<group>"; };
+		1008CC32182A84BB001B53DC /* MNKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNKAppDelegate.m; sourceTree = "<group>"; };
+		1008CC40182A84BB001B53DC /* InteractiveMNKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InteractiveMNKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1008CC41182A84BB001B53DC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1008CC49182A84BB001B53DC /* InteractiveMNKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InteractiveMNKTests-Info.plist"; sourceTree = "<group>"; };
+		1008CC4B182A84BB001B53DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1008CC4D182A84BB001B53DC /* InteractiveMNKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractiveMNKTests.m; sourceTree = "<group>"; };
+		1008CC57182A8763001B53DC /* MNKHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNKHomeVC.h; sourceTree = "<group>"; };
+		1008CC58182A8763001B53DC /* MNKHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNKHomeVC.m; sourceTree = "<group>"; };
+		1008CC5A182A876E001B53DC /* MNKGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNKGameVC.h; sourceTree = "<group>"; };
+		1008CC5B182A876E001B53DC /* MNKGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNKGameVC.m; sourceTree = "<group>"; };
+		1008D143182C8AB1001B53DC /* MNKGameBoardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNKGameBoardCell.h; sourceTree = "<group>"; };
+		1008D144182C8AB1001B53DC /* MNKGameBoardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNKGameBoardCell.m; sourceTree = "<group>"; };
+		1008D145182C8AB1001B53DC /* MNKGameBoardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MNKGameBoardCell.xib; sourceTree = "<group>"; };
+		1008D149182C8AD1001B53DC /* MNKABSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNKABSearch.h; sourceTree = "<group>"; };
+		1008D14A182C8AD1001B53DC /* MNKABSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNKABSearch.m; sourceTree = "<group>"; };
+		1008D14D182C8AF4001B53DC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1008D150182C8B0E001B53DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1008D152182C8B58001B53DC /* MNKNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNKNode.h; sourceTree = "<group>"; };
+		1008D153182C8B58001B53DC /* MNKNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNKNode.m; sourceTree = "<group>"; };
+		1008D156182D30B4001B53DC /* MNKState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNKState.h; sourceTree = "<group>"; };
+		1008D157182D30B4001B53DC /* MNKState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNKState.m; sourceTree = "<group>"; };
+		10DA6B9F182EC0E000A744A2 /* MNKABSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNKABSearchResult.h; sourceTree = "<group>"; };
+		10DA6BA0182EC0E000A744A2 /* MNKABSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNKABSearchResult.m; sourceTree = "<group>"; };
+		10DA6BA2182EC24C00A744A2 /* MNKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNKConstants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1008CC1C182A84BB001B53DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1008CC25182A84BB001B53DC /* CoreGraphics.framework in Frameworks */,
+				1008CC27182A84BB001B53DC /* UIKit.framework in Frameworks */,
+				1008CC23182A84BB001B53DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1008CC3D182A84BB001B53DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1008CC42182A84BB001B53DC /* XCTest.framework in Frameworks */,
+				1008CC44182A84BB001B53DC /* UIKit.framework in Frameworks */,
+				1008CC43182A84BB001B53DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1008CC16182A84BB001B53DC = {
+			isa = PBXGroup;
+			children = (
+				1008CC28182A84BB001B53DC /* InteractiveMNK */,
+				1008CC47182A84BB001B53DC /* InteractiveMNKTests */,
+				1008CC21182A84BB001B53DC /* Frameworks */,
+				1008CC20182A84BB001B53DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1008CC20182A84BB001B53DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1008CC1F182A84BB001B53DC /* InteractiveMNK.app */,
+				1008CC40182A84BB001B53DC /* InteractiveMNKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1008CC21182A84BB001B53DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1008CC22182A84BB001B53DC /* Foundation.framework */,
+				1008CC24182A84BB001B53DC /* CoreGraphics.framework */,
+				1008CC26182A84BB001B53DC /* UIKit.framework */,
+				1008CC41182A84BB001B53DC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1008CC28182A84BB001B53DC /* InteractiveMNK */ = {
+			isa = PBXGroup;
+			children = (
+				1008CC31182A84BB001B53DC /* MNKAppDelegate.h */,
+				1008CC32182A84BB001B53DC /* MNKAppDelegate.m */,
+				1008D142182C8AB1001B53DC /* custom_components */,
+				1008D148182C8AD1001B53DC /* ab_search */,
+				1008D14C182C8AF4001B53DC /* storyboards */,
+				1008CC57182A8763001B53DC /* MNKHomeVC.h */,
+				1008CC58182A8763001B53DC /* MNKHomeVC.m */,
+				1008CC5A182A876E001B53DC /* MNKGameVC.h */,
+				1008CC5B182A876E001B53DC /* MNKGameVC.m */,
+				1008D14F182C8B0E001B53DC /* resources */,
+				1008CC29182A84BB001B53DC /* Supporting Files */,
+			);
+			path = InteractiveMNK;
+			sourceTree = "<group>";
+		};
+		1008CC29182A84BB001B53DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1008CC2A182A84BB001B53DC /* InteractiveMNK-Info.plist */,
+				1008CC2B182A84BB001B53DC /* InfoPlist.strings */,
+				1008CC2E182A84BB001B53DC /* main.m */,
+				1008CC30182A84BB001B53DC /* InteractiveMNK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1008CC47182A84BB001B53DC /* InteractiveMNKTests */ = {
+			isa = PBXGroup;
+			children = (
+				1008CC4D182A84BB001B53DC /* InteractiveMNKTests.m */,
+				1008CC48182A84BB001B53DC /* Supporting Files */,
+			);
+			path = InteractiveMNKTests;
+			sourceTree = "<group>";
+		};
+		1008CC48182A84BB001B53DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1008CC49182A84BB001B53DC /* InteractiveMNKTests-Info.plist */,
+				1008CC4A182A84BB001B53DC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1008D142182C8AB1001B53DC /* custom_components */ = {
+			isa = PBXGroup;
+			children = (
+				1008D143182C8AB1001B53DC /* MNKGameBoardCell.h */,
+				1008D144182C8AB1001B53DC /* MNKGameBoardCell.m */,
+				1008D145182C8AB1001B53DC /* MNKGameBoardCell.xib */,
+			);
+			path = custom_components;
+			sourceTree = "<group>";
+		};
+		1008D148182C8AD1001B53DC /* ab_search */ = {
+			isa = PBXGroup;
+			children = (
+				10DA6BA2182EC24C00A744A2 /* MNKConstants.h */,
+				1008D149182C8AD1001B53DC /* MNKABSearch.h */,
+				1008D14A182C8AD1001B53DC /* MNKABSearch.m */,
+				1008D152182C8B58001B53DC /* MNKNode.h */,
+				1008D153182C8B58001B53DC /* MNKNode.m */,
+				1008D156182D30B4001B53DC /* MNKState.h */,
+				1008D157182D30B4001B53DC /* MNKState.m */,
+				10DA6B9F182EC0E000A744A2 /* MNKABSearchResult.h */,
+				10DA6BA0182EC0E000A744A2 /* MNKABSearchResult.m */,
+			);
+			path = ab_search;
+			sourceTree = "<group>";
+		};
+		1008D14C182C8AF4001B53DC /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1008D14D182C8AF4001B53DC /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		1008D14F182C8B0E001B53DC /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				1008D150182C8B0E001B53DC /* Images.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1008CC1E182A84BB001B53DC /* InteractiveMNK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1008CC51182A84BB001B53DC /* Build configuration list for PBXNativeTarget "InteractiveMNK" */;
+			buildPhases = (
+				1008CC1B182A84BB001B53DC /* Sources */,
+				1008CC1C182A84BB001B53DC /* Frameworks */,
+				1008CC1D182A84BB001B53DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InteractiveMNK;
+			productName = InteractiveMNK;
+			productReference = 1008CC1F182A84BB001B53DC /* InteractiveMNK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1008CC3F182A84BB001B53DC /* InteractiveMNKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1008CC54182A84BB001B53DC /* Build configuration list for PBXNativeTarget "InteractiveMNKTests" */;
+			buildPhases = (
+				1008CC3C182A84BB001B53DC /* Sources */,
+				1008CC3D182A84BB001B53DC /* Frameworks */,
+				1008CC3E182A84BB001B53DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1008CC46182A84BB001B53DC /* PBXTargetDependency */,
+			);
+			name = InteractiveMNKTests;
+			productName = InteractiveMNKTests;
+			productReference = 1008CC40182A84BB001B53DC /* InteractiveMNKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1008CC17182A84BB001B53DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MNK;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Qiao John";
+				TargetAttributes = {
+					1008CC3F182A84BB001B53DC = {
+						TestTargetID = 1008CC1E182A84BB001B53DC;
+					};
+				};
+			};
+			buildConfigurationList = 1008CC1A182A84BB001B53DC /* Build configuration list for PBXProject "InteractiveMNK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1008CC16182A84BB001B53DC;
+			productRefGroup = 1008CC20182A84BB001B53DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1008CC1E182A84BB001B53DC /* InteractiveMNK */,
+				1008CC3F182A84BB001B53DC /* InteractiveMNKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1008CC1D182A84BB001B53DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1008D147182C8AB1001B53DC /* MNKGameBoardCell.xib in Resources */,
+				1008D151182C8B0E001B53DC /* Images.xcassets in Resources */,
+				1008CC2D182A84BB001B53DC /* InfoPlist.strings in Resources */,
+				1008D14E182C8AF4001B53DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1008CC3E182A84BB001B53DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1008CC4C182A84BB001B53DC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1008CC1B182A84BB001B53DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1008CC2F182A84BB001B53DC /* main.m in Sources */,
+				1008D14B182C8AD1001B53DC /* MNKABSearch.m in Sources */,
+				1008D154182C8B58001B53DC /* MNKNode.m in Sources */,
+				1008D146182C8AB1001B53DC /* MNKGameBoardCell.m in Sources */,
+				1008D158182D30B4001B53DC /* MNKState.m in Sources */,
+				1008CC33182A84BB001B53DC /* MNKAppDelegate.m in Sources */,
+				1008CC59182A8763001B53DC /* MNKHomeVC.m in Sources */,
+				10DA6BA1182EC0E000A744A2 /* MNKABSearchResult.m in Sources */,
+				1008CC5C182A876E001B53DC /* MNKGameVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1008CC3C182A84BB001B53DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1008CC4E182A84BB001B53DC /* InteractiveMNKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1008CC46182A84BB001B53DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1008CC1E182A84BB001B53DC /* InteractiveMNK */;
+			targetProxy = 1008CC45182A84BB001B53DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1008CC2B182A84BB001B53DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1008CC2C182A84BB001B53DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1008CC4A182A84BB001B53DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1008CC4B182A84BB001B53DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1008CC4F182A84BB001B53DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1008CC50182A84BB001B53DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1008CC52182A84BB001B53DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: John Qiao (Q4S4655CVL)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InteractiveMNK/InteractiveMNK-Prefix.pch";
+				INFOPLIST_FILE = "InteractiveMNK/InteractiveMNK-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E071C0DB-29B9-4E51-B4A6-E5A359B4AE65";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1008CC53182A84BB001B53DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: John Qiao (Q4S4655CVL)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InteractiveMNK/InteractiveMNK-Prefix.pch";
+				INFOPLIST_FILE = "InteractiveMNK/InteractiveMNK-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E071C0DB-29B9-4E51-B4A6-E5A359B4AE65";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1008CC55182A84BB001B53DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InteractiveMNK.app/InteractiveMNK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InteractiveMNK/InteractiveMNK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "InteractiveMNKTests/InteractiveMNKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1008CC56182A84BB001B53DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InteractiveMNK.app/InteractiveMNK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InteractiveMNK/InteractiveMNK-Prefix.pch";
+				INFOPLIST_FILE = "InteractiveMNKTests/InteractiveMNKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1008CC1A182A84BB001B53DC /* Build configuration list for PBXProject "InteractiveMNK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1008CC4F182A84BB001B53DC /* Debug */,
+				1008CC50182A84BB001B53DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1008CC51182A84BB001B53DC /* Build configuration list for PBXNativeTarget "InteractiveMNK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1008CC52182A84BB001B53DC /* Debug */,
+				1008CC53182A84BB001B53DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1008CC54182A84BB001B53DC /* Build configuration list for PBXNativeTarget "InteractiveMNKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1008CC55182A84BB001B53DC /* Debug */,
+				1008CC56182A84BB001B53DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1008CC17182A84BB001B53DC /* Project object */;
+}
